@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Online Test Platform</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- LOGIN -->
+
+<div id="loginPage">
+
+<div class="login-box">
+
+<h1>📝 Online Test Platform</h1>
+
+<p class="subtitle">
+
+Matematika fanidan online test
+
+</p>
+
+<input
+type="text"
+id="username"
+placeholder="Ismingizni kiriting">
+
+<select id="subject">
+
+<option value="Matematika">
+
+📘 Matematika
+
+</option>
+
+</select>
+
+<button id="startBtn">
+
+🚀 Testni boshlash
+
+</button>
+
+</div>
+
+</div>
+
+<!-- QUIZ -->
+
+<div id="quizPage" class="hide">
+
+<div class="header">
+
+<div class="user">
+
+👤
+
+<span id="playerName">
+
+</span>
+
+</div>
+
+<div class="subject">
+
+📘 Matematika
+
+</div>
+
+<div id="timer">
+
+10
+
+</div>
+
+</div>
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+<div class="question-number">
+
+Savol
+
+<span id="questionNumber">
+
+1
+
+</span>
+
+/20
+
+</div>
+
+<div class="questionBox">
+
+<h2 id="question">
+
+Savol
+
+</h2>
+
+</div>
+
+<div id="answers">
+
+</div>
+
+<button id="nextBtn">
+
+Keyingi ➜
+
+</button>
+
+</div>
+
+<!-- RESULT -->
+
+<div id="resultPage" class="hide">
+
+<h1>
+
+🎉 Test yakunlandi
+
+</h1>
+
+<div class="result-box">
+
+<h2 id="finalName">
+
+</h2>
+
+<p>
+
+📘 Fan:
+
+<b>
+
+Matematika
+
+</b>
+
+</p>
+
+<p id="correctAnswer">
+
+</p>
+
+<p id="wrongAnswer">
+
+</p>
+
+<p id="score">
+
+</p>
+
+<p id="percent">
+
+</p>
+
+<button onclick="location.reload()">
+
+🔄 Qayta ishlash
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="questions.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
